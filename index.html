@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Look</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="flex-container" id=mainHead>
+        <p id="heading">Available Budget in March 2020:</p>
+        <a id="budgetValue"></a>
+        <div id="tabs">
+            <div  id="incomeTab">
+                <a>INCOME</a>
+                <a id="incomeValue">00.00</a>
+            </div>
+            <div  id="expensesTab">
+                <a>EXPENSES</a>
+                <a id="expensesValue">00.00</a>
+            </div>
+        </div>
+    </div>
+    <div class ="flex-container" id="bar">
+        <button id="positiveValue" >+</button>
+        <button id="negativeValue" >-</button>
+        <input id="navItem1" type="text" placeholder="Add a Description">
+        <input id="navItem2" type="text" placeholder="Value">
+        <button id="addBtn"><i class="ion-ios-checkmark-outline"></i></button>
+    </div>
+
+    <div id="table">
+        <table>
+            <tbody id="incomeTable">
+                <tr><th style="font-size: 20px;  ">INCOME</th></tr> 
+            </tbody>   
+        </table>
+
+        <table >
+            <tbody id="expensesTable">
+                <tr><th style=" font-size: 20px;">EXPENSES</th></tr>
+            </tbody>   
+        </table>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+
+</html>
