@@ -1,3 +1,6 @@
+document.getElementById("navItem1").value="";
+document.getElementById("navItem2").value="";
+
 document.getElementById("budgetValue").innerHTML = document.getElementById("incomeValue").innerHTML + document.getElementById("expensesValue");
 let plus = document.getElementById("positiveValue");
 let neg = document.getElementById("negativeValue");
@@ -65,6 +68,8 @@ function addItem() {
     document.getElementById("budgetValue").innerHTML = incomeReturn() - expensesReturn();
     i1.addEventListener("dblclick", editRow);
     i2.addEventListener("click", deleteRow);
+    document.getElementById("navItem1").value="";
+    document.getElementById("navItem2").value="";
 
 }
 
@@ -119,7 +124,7 @@ function editRow(event) {
         if (event.keyCode === 13) {
             let a = document.createElement("a");
             a.classList.add(className);
-            a.innerHTML = sign + "" + input.value;
+            a.innerHTML = "+" + input.value;
             input.replaceWith(a);
             //console.log(eventId.parentElement.id);
             editArray(eventId.parentElement.id,input.value);

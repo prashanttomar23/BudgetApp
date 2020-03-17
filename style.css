@@ -144,7 +144,7 @@ tr,tbody{
      */
 } 
 tr:nth-child(even) {
-    background-color: #242424;
+    background-color: #272727;
   }
 .incomeCost{
     margin:5px 10px;
